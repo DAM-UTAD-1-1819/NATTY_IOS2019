@@ -8,41 +8,36 @@
 
 
 //Lista de los diferentes  Cafes
-/*let defaultCafe: [Cafe] = [Cafe(photo:"cafearabica1",
-                                name: "Cafe Arabica",
-                               country: "Asia"),
-    
-                             // year: Calendar.current.date(from: DateComponents( year:1975)),
+let cafes:[Cafe] = [Cafe(photo:"cafe1",
+                         name:"Cafe Arabica",
+                         country:"lslsl"),
+                    Cafe    (photo:"cafe2",
+                            name:"Cafe Espresso",
+                            country:"gthj"),
+                    Cafe    (photo:"cafe3",
+                              name:"Cafe Arabica",
+                              country:"lslsl"),
+                    Cafe    (photo:"cafe4",
+                              name:"Cafe Arabica",
+                              country:"lslsl"),
+                    Cafe    (photo:"cafe5",
+                              name:"Cafe Arabica",
+                              country:"lslsl"),
+                    Cafe    (photo:"cafe6",
+                              name:"Cafe Arabica",
+                              country:"lslsl"),
+                    Cafe    (photo:"cafe7",
+                              name:"Cafe Arabica",
+                              country:"lslsl")]
+                  
 
 
-                            Cafe (photo:"cafeexpresso",
-                                       name: "Cafe Solo o Expresso",
-                                       country:"Europa",
-                                   // year: Calendar.current.date(from:DateComponents(year:90)),
-
-                            Cafe ( photo:"caferobusta+arabica",
-                                              name:"Cafe Robusta",
-                                             country:"America",
-                                         //   year:Calendar.current.date(from:DateComponents(year:80)),
-                                              
-                                Cafe ( photo:"machiatto",
-                                           name:"Cafe Machiatto",
-                                           country:""),
-                                       //   year:Calendar.current.date(from:DateComponents(year:20)),
-                                           
-                                           
-                                Cafe (photo:"Ristretto",
-                                      name:"Ristretto Lungo")),
-                                      country:"lhfg")]
-
-
-*/
-
-
-                                     //year: Calendar.current.date(from:DateComponents(year:40),]
                                       
                                       
     //Lista de los diferentes TopsCafe
+
+
+
 
 
 
@@ -55,6 +50,7 @@
                                              
                                              
                                          
+
 
 
 

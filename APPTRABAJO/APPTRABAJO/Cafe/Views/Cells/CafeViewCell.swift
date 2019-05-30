@@ -28,11 +28,13 @@ class CafeViewCell: UITableViewCell {
         mCountryLabel?.text = ""
         
         
-        
-        
-     
-        
-        
-    }
     
+        
+        /*override func setSelected(sele, animated: <#T##Bool#>)*/
+        
+            
+            
+        
+                
+}
 }

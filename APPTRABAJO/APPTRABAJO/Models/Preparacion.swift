@@ -6,8 +6,11 @@
 //  Copyright © 2019 NATALIA PAVAN SOTO. All rights reserved.
 //
 
-import UIKit
+/*import UIKit
 
-class Instrucciones: NSObject {
+class Instrucciones:  CustomStringConvertible{*/
+    
+    
+    
 
-}
+

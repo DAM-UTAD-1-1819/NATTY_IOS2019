@@ -6,18 +6,37 @@
 //  Copyright © 2019 NATALIA PAVAN SOTO. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class Cafe:CustomStringConvertible  {
     var description: String = ""
     var photo: String?
     var name: String?
-    var year: Date?
     var country: String?
     
     
+   convenience init(photo:String? = nil, description:String? = nil, name:String?=nil, country:String?=nil, Cafes: [Cafe]? = nil, TopsCafe: [TopsCafe]? = nil){
+        self.init()
+        
+        self.photo = photo
+        self.name = name
+        self.country = country
+        self.description = description!
+        
+        
+        
+    }
+    
+    
+    
+    
 
-}
+        
+    }
+    
+    
+
+
     
 
 
