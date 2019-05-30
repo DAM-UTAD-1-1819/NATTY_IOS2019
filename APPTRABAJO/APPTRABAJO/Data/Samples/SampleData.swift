@@ -9,7 +9,7 @@
 
 //Lista de los diferentes  Cafes
 let cafes:[Cafe] = [Cafe(photo:"cafe1",
-                         name:"Cafe Arabica",
+                         name:"cafe1",
                          country:"lslsl"),
                     Cafe    (photo:"cafe2",
                             name:"Cafe Espresso",
@@ -22,14 +22,7 @@ let cafes:[Cafe] = [Cafe(photo:"cafe1",
                               country:"lslsl"),
                     Cafe    (photo:"cafe5",
                               name:"Cafe Arabica",
-                              country:"lslsl"),
-                    Cafe    (photo:"cafe6",
-                              name:"Cafe Arabica",
-                              country:"lslsl"),
-                    Cafe    (photo:"cafe7",
-                              name:"Cafe Arabica",
                               country:"lslsl")]
-                  
 
 
                                       

@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="-1500" y="-172"/>
         </scene>
-        <!--Cafes-->
+        <!--CafeViewController-->
         <scene sceneID="AB8-D9-2Mk">
             <objects>
-                <viewControllerPlaceholder storyboardName="Cafes" id="OEx-RC-uDl" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Cafes" referencedIdentifier="CafeViewController" id="OEx-RC-uDl" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="TopsCafe" id="cJD-W0-jyD"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pbo-0O-Bad" userLabel="First Responder" sceneMemberID="firstResponder"/>

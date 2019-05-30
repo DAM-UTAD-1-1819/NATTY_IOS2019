@@ -30,7 +30,7 @@ class CafeViewCell: UITableViewCell {
         
     
         
-        /*override func setSelected(sele, animated: <#T##Bool#>)*/
+    
         
             
             
