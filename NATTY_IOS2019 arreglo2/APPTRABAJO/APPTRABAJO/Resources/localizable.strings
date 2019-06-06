@@ -1,0 +1,14 @@
+/* 
+  localizable.strings
+  APPTRABAJO
+
+  Created by NATALIA PAVAN SOTO on 30/5/19.
+  Copyright © 2019 NATALIA PAVAN SOTO. All rights reserved.
+*/
+
+
+
+"title_alert" = "Delete subject?";
+"message_alert" = "Continue with this action you delete this subject";
+"accept" = "Accept";
+"cancel" = "Cancel";
