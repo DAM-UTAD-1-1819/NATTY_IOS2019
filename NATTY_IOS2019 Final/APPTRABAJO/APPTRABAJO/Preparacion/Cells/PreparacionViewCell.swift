@@ -20,16 +20,13 @@ class PreparacionViewCell: UITableViewCell {
     static let mEstimatedHeight: CGFloat = 120.0
     
     
-    @IBOutlet weak var mImageView: UIImageView!
     @IBOutlet weak var mNameLabel: UILabel!
     @IBOutlet weak var mDescriptionLabel: UILabel!
-    @IBOutlet weak var mPreparationLabel: UILabel!
     
     
     
     
     override func prepareForReuse() {
-        mImageView?.image = nil
         mNameLabel?.text = ""
         mDescriptionLabel?.text = ""
       
@@ -50,19 +47,12 @@ class PreparacionViewCell: UITableViewCell {
     
     
     func update(data preparacion : Preparacion?){
-        update(image: preparacion?.photo)
         update(name: preparacion?.name)
         update( description: preparacion?.description)
         
     }
     
-    private func update(image: String?){
-        guard let imageData = image else{
-            return
-        }
-        mImageView?.image = UIImage(named: imageData)
-    }
-    
+   
     
     
     private func update(name: String?){

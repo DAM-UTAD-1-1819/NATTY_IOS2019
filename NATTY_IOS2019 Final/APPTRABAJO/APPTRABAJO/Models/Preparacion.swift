@@ -10,8 +10,8 @@
 import Foundation
 
 //Clase Preparacion
-public class Preparacion: CustomStringConvertible {
-    public var description: String = ""
+public class Preparacion{
+    public var description: String?
     
     var photo: String?
     var name: String?
@@ -26,6 +26,7 @@ public class Preparacion: CustomStringConvertible {
         self.photo = photo
         self.name = name
         self.preparation = preparation
+        self.description = description
         
         
         

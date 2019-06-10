@@ -6,76 +6,81 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Categorias-->
-        <scene sceneID="1mf-bv-qEV">
+        <!--Categorias View Controller-->
+        <scene sceneID="sdz-jF-ld0">
             <objects>
-                <tableViewController id="KEG-XP-aVS" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nmK-KU-dct">
+                <viewController id="Sn6-ax-Pcm" customClass="CategoriasViewController" customModule="APPTRABAJO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5W4-U7-jC6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="dtN-Br-9ns">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IiO-3M-2ub">
-                                <size key="itemSize" width="153" height="155"/>
-                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            </collectionViewFlowLayout>
-                            <cells>
-                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Do9-e3-IrP">
-                                    <rect key="frame" x="0.0" y="0.0" width="153" height="155"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bio-lK-3gl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vhN-eD-B9w">
+                                    <size key="itemSize" width="153" height="155"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoriasViewCell" id="K3a-xP-Rtg" customClass="CategoriasViewCell" customModule="APPTRABAJO" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="153" height="155"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bRc-ha-prm">
-                                                <rect key="frame" x="0.0" y="0.0" width="153" height="123"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mGi-up-hjB">
-                                                <rect key="frame" x="0.0" y="121" width="153" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMA-9H-7CQ">
-                                                        <rect key="frame" x="47" y="7" width="42" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hpB-Xs-8Kq">
-                                                <rect key="frame" x="0.0" y="0.0" width="153" height="119"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </stackView>
-                                        </subviews>
-                                    </view>
-                                </collectionViewCell>
-                            </cells>
-                        </collectionView>
-                        <connections>
-                            <outlet property="dataSource" destination="KEG-XP-aVS" id="K9O-3h-GBe"/>
-                            <outlet property="delegate" destination="KEG-XP-aVS" id="38c-HA-OsD"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Categorias" id="FMB-MC-kOt"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="153" height="155"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g8r-Lx-FOM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="153" height="123"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lk9-5r-OxG">
+                                                    <rect key="frame" x="0.0" y="121" width="153" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jrd-O0-kzl">
+                                                            <rect key="frame" x="47" y="7" width="42" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="mImageView" destination="g8r-Lx-FOM" id="l5j-5A-nvO"/>
+                                            <outlet property="mTitleLabel" destination="Jrd-O0-kzl" id="bu7-Dh-fAA"/>
+                                            <segue destination="1ta-P2-xrn" kind="show" id="ZkU-Xq-3Hs"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bio-lK-3gl" firstAttribute="top" secondItem="fju-IT-hmP" secondAttribute="top" id="CdM-d0-gQB"/>
+                            <constraint firstItem="fju-IT-hmP" firstAttribute="bottom" secondItem="bio-lK-3gl" secondAttribute="bottom" id="Lrr-MS-tIz"/>
+                            <constraint firstItem="bio-lK-3gl" firstAttribute="trailing" secondItem="fju-IT-hmP" secondAttribute="trailing" id="gIM-If-HZf"/>
+                            <constraint firstItem="bio-lK-3gl" firstAttribute="leading" secondItem="fju-IT-hmP" secondAttribute="leading" id="sue-1H-Lrk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fju-IT-hmP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UNp-ne-DSs"/>
                     <connections>
-                        <segue destination="1ta-P2-xrn" kind="show" id="T9O-dF-OIq"/>
+                        <outlet property="mCollectionView" destination="bio-lK-3gl" id="Bd2-jM-3cK"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e3c-5R-TwN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C9O-Zy-VGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="389.60000000000002" y="-304.4977511244378"/>
+            <point key="canvasLocation" x="377" y="-297"/>
         </scene>
         <!--CategoriaDetailViewController-->
         <scene sceneID="rqp-Ts-h9L">
@@ -96,7 +101,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="KEG-XP-aVS" kind="relationship" relationship="rootViewController" id="qlf-Ev-sOr"/>
+                        <segue destination="Sn6-ax-Pcm" kind="relationship" relationship="rootViewController" id="HI8-5a-sy6"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="un4-9e-oRM" userLabel="First Responder" sceneMemberID="firstResponder"/>

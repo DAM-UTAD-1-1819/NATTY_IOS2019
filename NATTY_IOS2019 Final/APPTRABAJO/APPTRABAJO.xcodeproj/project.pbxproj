@@ -244,7 +244,6 @@
 		92628F7E229454B3004EF0C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				92628F752294366D004EF0C5 /* CafeViewController.swift */,
 				92628F80229454DC004EF0C5 /* Cells */,
 			);
 			path = Views;
@@ -272,6 +271,7 @@
 		92761433229ED783002159C7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				92628F752294366D004EF0C5 /* CafeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

@@ -6,7 +6,7 @@
 //  Copyright © 2019 NATALIA PAVAN SOTO. All rights reserved.
 //
 
-/*import UIKit
+import UIKit
 
 class CategoriasViewController: UIViewController {
     // MARK: - IBOutlets -
@@ -36,7 +36,7 @@ class CategoriasViewController: UIViewController {
     
     // MARK: - Configuration -
     private func loadData() {
-        Categorias = defaultCategorias
+        Categorias = defaultCategoria
     }
 }
 
@@ -48,9 +48,9 @@ extension CategoriasViewController {
             return
         }
         
-     
+        
         if let destinationController = segue.destination as? CategoriasDetailViewController {
-            destinationController.delegate = self
+        
             destinationController.data = Categorias?[selectedPosition.row]
         }
     }
@@ -59,24 +59,24 @@ extension CategoriasViewController {
 
 
 extension CategoriasViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return defaultCategoria.count
+        return Categorias?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoriasViewCell.mIdentifier,
                                                       for: indexPath) as! CategoriasViewCell
-       
+        
         if let categorias = Categorias?[indexPath.row] {
             
-            cell.configureCell(data: defaultCategoria)
+            cell.configureCell(data: categorias)
         }
         
         return cell
     }
     
-
+    
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -97,24 +97,6 @@ extension CategoriasViewController: UICollectionViewDelegate, UICollectionViewDa
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return mCellSpacing
     }
-  
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-      
-        performSegue(withIdentifier: segueToCategorias,
-                     sender: indexPath)
-    }
+    
 }
-
-
-
-extension CategoriasViewController: CategoriasDetailDelegate {
-    func onDelete(categorias: Categorias?) {
-        guard let categoriasDelete = Categorias else {
-            return
-        }
-        
-        Categorias?.removeAll(where: { $0.name == categoriasDelete.name })
-        mCollectionView.reloadData()
-    }
-*/
 

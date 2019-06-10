@@ -28,9 +28,9 @@ class CafeViewCell: UITableViewCell {
     
     override func prepareForReuse() {
         mImageView?.image = nil 
-        mNameLabel?.text = ""
-        mCountryLabel?.text = ""
-        mDescriptionLabel?.text = ""
+        mNameLabel?.text = nil
+        mCountryLabel?.text = nil
+        mDescriptionLabel?.text = nil
         
     }
     

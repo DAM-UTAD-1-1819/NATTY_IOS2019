@@ -7,10 +7,10 @@
 //
 
 
-/*import UIKit
+import UIKit
 
 
-protocol cateDetailDelegate {
+protocol CategoriasDetailDelegate {
     func onDelete(categorias: Categorias?)
 }
 
@@ -35,18 +35,18 @@ class CategoriasDetailViewController: UIViewController {
     
     
     var data: Categorias?
+    var delegate: CategoriasDetailDelegate?
     
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
         configure(image: data?.photo)
         configure(title: data?.title)
         configure(description: data?.description)
     }
     
-  
+    
     
     // MARK: - Private methods -
     private func configure(image: String?) {
@@ -66,14 +66,14 @@ class CategoriasDetailViewController: UIViewController {
     }
     
     private func navigateBack() {
-        delegate?.onDelete(subject: data)
+        delegate?.onDelete(categorias: data)
         
         navigationController?.popViewController(animated: true)
     }
-}*/
+}
 
-    
-    
-    
- 
+
+
+
+
 

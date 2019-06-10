@@ -73,8 +73,8 @@ class TopsCafeViewCell: UITableViewCell {
     }
     
     
-  
-        
-    }
+    
+    
+}
 
 
